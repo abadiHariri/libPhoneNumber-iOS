@@ -35,8 +35,8 @@ Pod::Spec.new do |s|
                     'libPhoneNumber/**/*.{h,m}',
                    ]
 
-  s.resources   = [
-                    'libPhoneNumber/PrivacyInfo.xcprivacy'
-                  ]
+  s.resource_bundles = {
+                       'libPhoneNumber-iOS' => ['libPhoneNumber/PrivacyInfo.xcprivacy']
+                   }
 
 end
